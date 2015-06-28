@@ -64,10 +64,8 @@ RUN add-apt-repository ppa:juan457/zorba
 RUN apt-get update
 RUN apt-get install zorba-with-language-bindings
 
-# Enable apache modules
-RUN a2enmod \
-    ssl \
-    rewrite
+# Enable apache rewrite
+RUN a2enmod rewrite
 
 # Expose ports
 EXPOSE 80
