@@ -65,8 +65,9 @@ RUN apt-get update
 RUN apt-get install zorba-with-language-bindings
 
 # Enable apache modules
-RUN a2enmod mod_ssl
-RUN a2enmod mod_rewrite
+RUN a2enmod \
+    ssl \
+    rewrite
 
 # Expose ports
 EXPOSE 80
