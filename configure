@@ -4,7 +4,7 @@
 sed -i "s/AllowOverride None/AllowOverride All/g" /etc/apache2/sites-available/default
 
 # set php.ini
-echo "include_path=\"usr/share/php5/\"" >> /etc/php5/apache2/php.ini
+echo "include_path=\"/usr/share/php5/\"" >> /etc/php5/apache2/php.ini
 echo "extension=/usr/share/php5/libzorba_api.so" >> /etc/php5/apache2/php.ini
 
 # bug fix for zorba api (php function dl() has been removed in some sapis)
