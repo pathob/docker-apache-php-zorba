@@ -1,4 +1,4 @@
-# docker-apache-php-zorba
+# Apache PHP and Zorba for Docker
 
 This docker container automatically provides an apache web server with php and zorba.
 
